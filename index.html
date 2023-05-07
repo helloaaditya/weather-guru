@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather-Guru</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  </head>
+  <body>
+    <h1>Weather-Guru</h1>
+    <div class="containar">
+    <form>
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city">
+      <br>
+      <label for="country">Country:</label>
+      <input type="text" id="country" name="country">
+      <br>
+      <button type="submit">Submit</button>
+      <span><button type ="Reset">Reset</button></span>
+    </form>
+    <div id="weather-report"></div>
+</div>
+<h3>Next 10 days weather-report</h3>
+    <table id="forecast-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Description</th>
+            <th>High / Low</th>
+            <th>Humidity</th>
+            <th>Wind Speed</th>
+          </tr>
+        </thead>
+        <tbody id="forecast">
+        </tbody>
+      </table>
+      
+    <script src="script.js"></script>
+  </body>
+</html>
